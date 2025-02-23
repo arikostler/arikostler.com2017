@@ -1,0 +1,17 @@
+body{
+    background-color: whitesmoke;
+}
+
+.bordered{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.loginlogo{
+    margin: 15px;
+}

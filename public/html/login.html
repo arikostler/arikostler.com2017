@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="ArikOstler.com">
+    <meta name="application-name" content="ArikOstler.com">
+    <title>MyDashboard Login</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/cdn/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/cdn/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/sitewide.css">
+
+    <script type="text/javascript" src="/cdn/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/cdn/jquery-cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/cdn/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/cdn/vue/vue.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse" id="navbarApp">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#myNavbarCollapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/app">Arik Ostler</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbarCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">
+                    <i class="glyphicon glyphicon-home"></i>
+                    Home
+                </a></li>
+                <li id="userinfo"><a href="/login">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    Login
+                </a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="col-md-4 col-md-offset-4 center-text">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="loginlogo">
+                    <img src="/img/raspberrypi.png" alt="raspberry pi image" width="30%">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <form action="/api/auth/login" method="POST">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                            <input type="text" class="form-control" placeholder="Username" name="username">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/pubscript.js"></script>
+</body>
+</html>
