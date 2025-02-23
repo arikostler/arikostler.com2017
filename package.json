@@ -1,0 +1,25 @@
+{
+  "name": "mydashboard",
+  "version": "0.0.1",
+  "description": "IoT Dashboard version 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo node index.js",
+	"dev": "sudo nodemon index.js"
+  },
+  "author": "arikostler@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "jquery.cookie": "^1.4.1",
+    "jwt-simple": "^0.5.1",
+    "uuid": "^3.0.1",
+    "vue": "^2.1.10"
+  }
+}
